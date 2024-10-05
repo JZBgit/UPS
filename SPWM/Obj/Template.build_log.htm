@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 11, 11, LIC=PE7DL-0T3R7-JJZ6S-LN4LJ-9IMFR-745XF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.18
+Toolchain Path:  D:\Keil v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+F:\2020电赛\SPWM（反相） - 副本\Template.uvprojx
+Project File Date:  10/17/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Keil v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+User\main.c(97): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		v_true = (out_acp_avg*0.00975) + 0.27;
+User\main.c(98): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		error=30.1-v_true;
+User\main.c(102): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		kp = kp+error*0.055;
+User\main.c(116): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(send_buff,"%.3f",v_true - 0.1);		
+User\main.c(116): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		sprintf(send_buff,"%.3f",v_true - 0.1);		
+User\main.c(40): warning:  #177-D: variable "v_value" was declared but never referenced
+  	float v_value;
+User\main.c(153): warning:  #9-D: nested comment is not allowed
+  		y=(int)(504*sin(x*PI/250)+840)/*9;
+User\main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=8040 RO-data=10728 RW-data=72 ZI-data=2048  
+FromELF: creating hex file...
+".\Obj\Template.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.11.0.pack
+                Keil.STM32F4xx_DFP.2.11.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\Keil v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
